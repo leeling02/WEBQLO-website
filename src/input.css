@@ -52,6 +52,16 @@
     margin: 12px; 
  }
 
+ button {   
+    border-bottom: 2px solid white; /* Set white border for bottom */
+    border-right: 2px solid white; /* Set white border for right */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding for button content */
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Display as inline-block to adjust width based on content */
+    box-shadow: 0 2px 0 black, 2px 0 0 black; /* Add black outer border for bottom and right sides */
+ }
+
  
 
  
