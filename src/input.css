@@ -48,6 +48,15 @@
     margin-top: 55px;
  }
 
+ #section-div {
+    margin: 12px; 
+ }
+
+ 
+
+ 
+
+
  @media only screen and (min-width:321px) and (max-width:768px) {
     #side-navigation-bar {
         display: block; 
@@ -57,6 +66,9 @@
     }
     #hero-section {
         height: 700px;
+    }
+    #carousel-caption {
+        display: block;
     }
  }
 
@@ -71,6 +83,9 @@
     #company-logo {
         margin-left: 350px;
     }
+    .video {
+        max-width: 40%;         
+    }
 
   }
 
@@ -80,5 +95,8 @@
     }
     #side-navigation-bar {
         display: none; 
+    }
+    .video {
+        max-width: 40%; 
     }
   }
