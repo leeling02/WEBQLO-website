@@ -36,11 +36,12 @@
  }
 
  #btn {
-    height: 8px;
-  width: 8px;
+  height: 11px;
+  width: 11px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  justify-content: space-between;
  }
 
 
@@ -66,6 +67,8 @@
 
  
 
+ 
+
 
  @media only screen and (min-width:321px) and (max-width:768px) {
     #side-navigation-bar {
@@ -80,6 +83,13 @@
     #carousel-caption {
         display: block;
     }
+    #carousel-for-big-screen {
+        display:none; 
+    }
+    #footer-for-big-screen {
+        display:none; 
+    }
+    
  }
 
  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -96,6 +106,13 @@
     .video {
         max-width: 40%;         
     }
+    #carousel-for-logo-1 {
+        display:none; 
+    }
+    #footer-for-small-screen {
+        display:none; 
+    }
+    
 
   }
 
@@ -109,4 +126,12 @@
     .video {
         max-width: 40%; 
     }
+    #carousel-for-logo-1 {
+        display:none; 
+    }
+    #footer-for-small-screen {
+        display:none; 
+    }
+
+
   }
