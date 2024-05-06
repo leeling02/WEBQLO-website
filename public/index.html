@@ -12,79 +12,74 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  
   <body class="bg-white">
     <!--NavBar-->
     <div class="flex flex-col">
-    <!--NavBar For Small Screens-->
-    <nav id="side-navigation-bar" class="bg-gradient-to-r from-gray-600 to-black w-full">
-      <div class="container">
-        <div class="centered-div flex">
-          <div>
-            <!--Side Navigation Bar-->
-            <div class="drawer">
-              <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-              <div class="drawer-content">
-                <label for="my-drawer" class=""
-                  ><i class="fa-solid fa-bars text-3xl mt-1"></i
-                ></label>
-              </div>
-              <div class="drawer-side">
-                <label
-                  for="my-drawer"
-                  aria-label="close sidebar"
-                  class="drawer-overlay"
-                ></label>
-                <ul
-                  class="menu p-4 w-80 min-h-full bg-base-200 text-base-content lg:w-full lg:text-xl"
-                >
-                  <!-- Sidebar content here -->
-                  <li><a>WHO WE ARE</a></li>
-                  <li>
-                    <details class="dropdown">
-                      <summary>WHAT WE DO</summary>
-                      <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-60 lg:w-full lg:text-base">
-                        <!--Dropdown content here-->
-                        <li><a>Integrated Digital Marketing</a></li>
-                        <li><a>Social Media Marketing</a></li>
-                        <li><a>Performance Marketing</a></li>
-                        <li><a>Social Media Intelligence</a></li>
-                        <li><a>Wed Design & Development</a></li>
-                        <li><a>AI & Data Science</a></li>
-                        <li><a>Digital Expeririential Marketing</a></li>
-                        <li><a>Content Marketing</a></li>
-  
-                      </ul>
-                    </details>
-                  </li>
-                  <li><a>OUR WORK</a></li>
-                  <li><a>HEADLINES</a></li>
-                  <li><a>CONTACT US</a></li>
-                </ul>
-              </div>
+    <!--NavBar For Mobile and Ipad-->
+    <nav id="side-navigation-bar" class="bg-gradient-to-r from-gray-600 to-black w-full z-50">
+  <div class="container">
+    <div class="centered-div flex">
+      <div>
+        <div class="drawer">
+          <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content flex">
+            <label for="my-drawer" class="">
+              <i class="fa-solid fa-bars text-3xl mt-1"></i>
+            </label>
+            <div id="company-logo" class="block m-auto pl-5">
+              <img src="/src/img/webqlo-logo.webp" alt="WEBQLO Logo" class="w-44 h-auto" />
             </div>
           </div>
-          <div id="company-logo">
-            <img src="/src/img/webqlo-logo.webp" alt="WEBQLO Logo" />
+          <div class="drawer-side">
+            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul class="menu p-4 w-80 min-h-full bg-black text-base-content md:w-full md:text-xl z-30">
+              <li class="border-b-2 border-gray-300 text-gray-400"><a>WHO WE ARE</a></li>
+              <div class="border-b-2 border-gray-300">
+                <li>
+                  <details class="dropdown">
+                    <summary class="text-gray-400">WHAT WE DO</summary>
+                    <ul class="p-2 shadow menu dropdown-content bg-black text-gray-400 rounded-box w-60 z-50">
+                      <!-- Dropdown content here -->
+                      <li><a>Integrated Digital Marketing</a></li>
+                      <li><a>Social Media Marketing</a></li>
+                      <li><a>Performance Marketing</a></li>
+                      <li><a>Social Media Intelligence</a></li>
+                      <li><a>Web Design & Development</a></li>
+                      <li><a>AI & Data Science</a></li>
+                      <li><a>Digital Experiential Marketing</a></li>
+                      <li><a>Content Marketing</a></li>
+                    </ul>
+                  </details>
+                </li>
+              </div>
+              <li class="border-b-2 border-gray-300 text-gray-400"><a>OUR WORK</a></li>
+              <li class="border-b-2 border-gray-300 text-gray-400"><a>HEADLINES</a></li>
+              <li class="text-gray-400"><a>CONTACT US</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
-    <!--NavBar For Big Screens-->
+
+    <!--NavBar For Monitor-->
     <nav id="top-navigation-bar" class="navbar bg-base-100 bg-gradient-to-r from-gray-600 to-black w-full flex relative">
-        <div class="w-2/12 h-auto absolute top-0 bottom-0 m-auto ml-14 ">
+        <div class="w-2/12 absolute top-0 bottom-0 m-auto ml-14 ">
           <img src="/src/img/webqlo-logo.webp" alt="WEBQLO Logo">
         </div>
         
-            <div class="absolute top-0 bottom-0 right-20 h-auto">
-              <ul class="menu menu-horizontal px-1 text-gray-500">
+            <div class="absolute top-0 bottom-0 right-20 h-auto z-20">
+              <ul class="menu menu-horizontal px-1 text-gray-300">
                 <li><a>WHO WE ARE</a></li>
                 <li>
                   <details>
                     <summary>
                       WHAT WE DO
                     </summary>
-                    <ul class="p-2 bg-base-100 rounded-t-none w-64">
+                    <ul class="p-2 bg-black rounded-t-none w-64 text-gray-400">
                         <li><a>Integrated Digital Marketing</a></li>
                         <li><a>Social Media Marketing</a></li>
                         <li><a>Performance Marketing</a></li>
@@ -104,39 +99,156 @@
           </div>
     </nav>
 </div>
+<!--Main Section-->
+<main>
 
-<!--Hero Section-->
-    <section id="hero-section" class="bg-[#F6F2F9]">
-        <div class="carousel w-full h-auto mt-20">
-            <div id="item1" class="carousel-item w-full bg-[#F6F2F9]">
-              <img src="/src/img/main_banner_1.webp" class="w-full h-auto"  />
-            </div> 
-            <div id="item2" class="carousel-item w-full">
-              <img src="/src/img/main_banner_2.webp" class="w-full h-auto"  />
-            </div> 
-            <div id="item3" class="carousel-item w-full">
-              <img src="/src/img/main_banner_3.webp" class="w-full h-auto"  />
-            </div> 
-            <div id="item4" class="carousel-item w-full">
-              <img src="/src/img/webqlo-banner-4.webp" class="w-full h-auto"  />
+<!--Section1-Banner-for-Mobile-and-Ipad-->
+    <section class="-z-10">
+      <div id="hero-section-for-small-screen" class="relative w-full h-auto">
+        <div id="carousel-for-logo" class="carousel h-auto">
+          <div id="banner1" class="carousel-item w-full justify-center bg-[#F6F2F9] space-x-10 flex-col">
+            <div>
+              <img src="/src/img/main_banner_1.webp" alt="main-banner" class="w-full h-auto">
             </div>
-          </div> 
-          <div class="flex justify-center py-2 gap-2">
-            <a href="#item1" id="btn"></a> 
-            <a href="#item2" id="btn"></a> 
-            <a href="#item3" id="btn"></a> 
-            <a href="#item4" id="btn"></a>
-          </div>
-    </section>
 
-<!--What We Do Section-->
+            <div class="mt-20">
+              <p class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#5799F1] via-[#BA52CC] to-[#F432BC] font-bold text-3xl text-center mr-6 mb-4 md:text-2xl 2xl:text-3xl">Download Free Report in 60 Secs</p>
+            </div>
+            <div class="text-center">
+              <button id="btn-banner1" class="mt-10 bg-black text-white font-medium px-7 py-3 md:text-xl md:px-12">Download Now</button>
+            </div>
+
+            
+          </div> 
+
+          <div id="banner2" class="carousel-item relative w-full justify-center space-x-10">
+            <div>
+              <img src="/src/img/image-1.webp" alt="main-banner" class="w-full h-full">
+            </div>
+
+          <div class="absolute text-white mt-10 right-5 z-50">
+            <h1 class="text-3xl font-bold text-center">360° DATA-DRIVEN</h1>
+            <h1 class="text-xl text-center">DIGITAL MARKETING SOLUTIONS</h1>
+            <p class="mt-10 text-center">We are experts in providing creative solutions backed by data-driven insights.</p>
+            <div class="text-center">
+              <button id="btn-banner2" class="mt-8 bg-white text-black font-medium px-7 py-3">Discover More</button>
+            </div>
+          </div>
+            
+          </div> 
+
+          <div id="banner3" class="carousel-item relative w-full justify-center space-x-10">
+            <div>
+              <img src="/src/img/image-2.webp" alt="main-banner" class="w-full h-full">
+            </div>
+
+          <div class="absolute text-[#284b8b] mt-10 right-6">
+            <h1 class="text-3xl font-bold text-center">SOCIAL MEDIA </h1>
+            <h1 class="text-xl text-center">INTELLIGENCE</h1>
+            <p class="mt-7 text-center">Power your digital marketing effort with Adqlo, our proprietary social media intelligence platform.</p>
+            <div class="text-center">
+              <button id="btn-banner3" class="mt-5 bg-black text-white font-medium px-7 py-3 md:text-xl md:px-12">Discover More</button>
+            </div>
+          </div>
+            
+          </div> 
+
+          <div id="banner4" class="carousel-item justify-center space-x-10 bg-black relative">
+            <div class="mt-28">
+              <img src="/src/img/webqlo-banner-4.webp" alt="main-banner" class="w-full h-60">
+            </div>
+
+          <div class="absolute bottom-32 left-0 text-2xl">
+            <p class="text-white text-xl">MEET THE</p>
+            <p class="text-white font-bold text-3xl">#WEBQLORIANS</p>
+            <button id="white-btn" class="bg-white text-black text-base font-medium px-7 py-3 mt-5">Discover More</button>
+          </div>
+          </div>
+
+        </div> 
+
+        <div class="flex absolute bottom-1 justify-center w-full py-2 gap-2 mt-3">
+          <a href="#banner1" id="btn"></a> 
+          <a href="#banner2" id="btn"></a> 
+          <a href="#banner3" id="btn"></a> 
+          <a href="#banner4" id="btn"></a> 
+        </div>
+
+      </div>
+    </section>
+  
+  <!--Section1-Banner-for-Monitor-->
+<section id="hero-section-for-big-screen">
+  <div class="relative w-full h-auto">
+
+  <div class="carousel w-full bg-[#F6F2F9]">
+    <div id="big-banner1" class="carousel-item relative w-full min-h-[700px]">
+      <div id="CTA" class="w-1/3 h-auto">
+        <p class="inline-block mt-52 ml-10 bg-clip-text text-transparent bg-gradient-to-r from-[#3D95FF] via-[#E295FF] to-black font-semibold text-5xl xl:text-7xl xl:ml-24 xl:mt-72 ">Download Free Report in 60 Secs</p>
+        <br><button class="mt-16 ml-10 absolute justify-center bg-black text-white font-medium px-7 py-3 xl:ml-24 xl:text-xl">Download Now</button> 
+
+      </div>
+
+      <div class="w-3/4 h-auto">
+        <img src="/src/img/main_banner_1.webp" alt="big-banner3" class="w-full h-auto mt-36">
+      </div>
+      
+    </div>
+
+    <div id="big-banner2" class="carousel-item w-full relative">
+      <div>
+        <img src="/src/img/main_banner_2.webp"  alt="big-banner2" class="w-full h-full" />
+      </div>
+      <div id="sub-banner2" class="absolute text-white">
+        <p class="text-5xl font-bold text-left">360° DATA-DRIVEN</p>
+        <p class="text-4xl text-left text-wrap mt-2 ">DIGITAL MARKETING SOLUTIONS</p>
+        <p class="text-2xl text-left text-wrap mt-10">We are experts in providing creative solutions backed by data-driven insights</p> <!--lg:text-wrap-->
+        <button id="white-btn" class="mt-8 text-left bg-white text-black text-xl font-bold px-16 py-3">Discover More</button>
+
+      </div>
+    </div> 
+
+    <div id="big-banner3" class="carousel-item w-full relative">
+      <div>
+        <img src="/src/img/main_banner_3.webp" alt="big-banner3" class="w-full h-full" />
+      </div>
+      <div id="sub-banner3" class="absolute text-[#284b8b]">
+        <p class="text-5xl font-bold text-left">SOCIAL MEDIA</p>
+        <p class="text-4xl text-left mt-2 ">INTELLIGENCE</p>
+        <p class="text-2xl text-left mt-10">Power your digital marketing effort with <br> Adqlo, our proprietary social media <br> intelligence platform.</p>
+        <button class="mt-16 absolute justify-center bg-black text-white font-bold text-xl px-16 py-3">Discover More</button>
+      </div>
+    </div> 
+    
+    <div id="big-banner4" class="carousel-item relative w-full bg-black">
+      <div class="ml-5 justify-center">
+        <img id="company-pic" src="/src/img/webqlo-banner-4.webp" alt="big-banner4" class="absolute w-3/4 h-auto top-0 right-0 left-0 m-auto" />
+      </div>
+      <div id="subheading" class="absolute text-white m-5">
+        <p class="text-4xl text-left">MEET THE <br><span class="text-6xl font-semibold">#WEBQLORIANS</span></p>
+        <button id="white-btn" class="mt-8 text-left bg-white text-black font-bold text-xl px-16 py-3">Discover More</button>
+      </div>
+    </div>
+  </div> 
+
+  <div class="flex absolute bottom-1 justify-center w-full py-2 gap-2">
+    <a href="#big-banner1" id="btn"></a> 
+    <a href="#big-banner2" id="btn"></a> 
+    <a href="#big-banner3" id="btn"></a> 
+    <a href="#big-banner4" id="btn"></a>
+  </div>
+</div>
+</section>
+
+
+<!--Section2-WhatWeDo-->
     <section> 
       <div class="text-center text-black pt-16 pb-11 font-bold text-lg md:text-4xl 2xl:text-3xl">WHAT WE DO</div>
       <div id="what-we-do-div" class="justify-center flex flex-wrap gap-20 m-5">
 
         <div id="video1-div" class="video">
           <div id="video" class="">
-            <video loop autoplay src="/src/img/video-1.mp4" type="video/mp4"></video>
+            <video autoplay loop muted src="/src/img/video-1.mp4" type="video/mp4"></video>
           </div>
           <div id="video-content" class="mt-14">
             <h1 class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#3D95FF] via-[#E295FF] to-black font-bold text-xl mb-4 md:text-2xl 2xl:text-3xl ">Integrated Digital Marketing</h1>
@@ -146,7 +258,7 @@
           
         <div id="video2-div" class="video ">
           <div id="video" class="">
-            <video loop autoplay src="/src/img/video-2.mp4" type="video/mp4"></video>
+            <video loop autoplay muted src="/src/img/video-2.mp4" type="video/mp4"></video>
           </div>
           <div id="video-content" class="mt-14">
             <h1 class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#CE0C49] via-[#FD94EB] to-black font-bold text-xl mb-4 md:text-2xl 2xl:text-3xl">Social Media Marketing</h1>
@@ -156,7 +268,7 @@
           
         <div id="video3-div" class="video">
           <div id="video" class="">
-            <video loop autoplay src="/src/img/video-3.mp4" type="video/mp4"></video>
+            <video loop autoplay muted src="/src/img/video-3.mp4" type="video/mp4"></video>
           </div>
           <div id="video-content" class="mt-14">
             <h1 class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#53A2FC] via-[#5557CA] to-black font-bold text-xl mb-4 md:text-2xl 2xl:text-3xl ">Performance Marketing</h1>
@@ -166,7 +278,7 @@
 
         <div id="video4-div" class="video">
           <div id="video" class="">
-            <video loop autoplay src="/src/img/video-4.mp4" type="video/mp4"></video>
+            <video loop autoplay muted src="/src/img/video-4.mp4" type="video/mp4"></video>
           </div>
           <div id="video-content" class="mt-14">
             <h1 class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#3E69FF] via-[#D06EFF] to-black font-bold text-xl mb-4 md:text-2xl 2xl:text-3xl ">Social Media Intelligence</h1>
@@ -176,7 +288,7 @@
 
         <div id="video5-div" class="video">
           <div id="video" class="">
-            <video loop autoplay src="/src/img/video-5.mp4" type="video/mp4"></video>
+            <video loop autoplay muted src="/src/img/video-5.mp4" type="video/mp4"></video>
           </div>
           <div id="video-content" class="mt-14">
             <h1 class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#D0A647] via-[#601678] to-black font-bold text-xl mb-4 md:text-2xl 2xl:text-3xl ">Web Design & Development</h1>
@@ -186,7 +298,7 @@
 
         <div id="video6-div" class="video">
           <div id="video" class="">
-            <video loop autoplay src="/src/img/video-6.mp4" type="video/mp4"></video>
+            <video loop autoplay muted src="/src/img/video-6.mp4" type="video/mp4"></video>
           </div>
           <div id="video-content" class="mt-14">
             <h1 class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-[#44A5FE] via-[#CB79FF] to-black font-bold text-xl mb-4 md:text-2xl 2xl:text-3xl ">AI & Data Science</h1>
@@ -198,7 +310,7 @@
 
     </section>
 
-    <!--Who We Are Section-->
+    <!--Section3-WhoWeAre-->
     <section>
       <div class="bg-gray-200 text-center py-24">
         <div id="section-title" class="mb-7">
@@ -215,7 +327,7 @@
       </div>
     </section>
 
-<!--Our Clients for Small Screens-->
+<!--Section4-OurClients-for-Mobile-and-Ipad-->
     <section id="carousel-for-logo-1" class="h-auto">
       <div class="text-center text-black pt-16 pb-11 font-bold text-xl md:text-4xl 2xl:text-3xl">OUR CLIENTS</div>
       <div id="brands">
@@ -278,7 +390,7 @@
       </div>
     </section>
 
-    <!--Our Clients for Big screens-->
+    <!--Section4-OurClients-for-Monitor-->
     <section id="carousel-for-big-screen">
       <div class="text-center text-black pt-16 pb-11 font-bold text-xl md:text-4xl 2xl:text-3xl">OUR CLIENTS</div>
       <div class="flex justify-center">
@@ -338,8 +450,9 @@
         </div>
       </div>
     </section>
+</main>
 
-    <!--Footer for Small Screens-->
+    <!--Footer for Mobile and Ipad-->
     <footer id="footer-for-small-screen" class="footer footer-center p-10 bg-white text-base-content rounded border-solid border-2 border-gray-200">
       <nav class="grid grid-flow-col gap-3">
         <a class="link link-hover text-xs text-black">Terms and Conditions</a>
@@ -359,8 +472,8 @@
           <p class="text-black">Partners with:</p>
         </div>
         <div class="flex ml-5">
-          <img src="/src/img/meta-logo.webp" alt="meta-logo">
-          <img src="/src/img/google-logo.svg" alt="google-logo">
+          <img src="/src/img/meta-logo.webp" alt="meta-logo" class="w-full h-8">
+          <img src="/src/img/google-logo.svg" alt="google-logo" class="w-full h-8">
         </div>
       </div>
       <aside>
@@ -368,7 +481,7 @@
       </aside>
     </footer>
 
-    <!--Footer for Big Screens-->
+    <!--Footer for Monitor-->
     <footer id="footer-for-big-screen" class="border-solid border-2 border-gray-200">
       <div class="m-4">
         <div class="mb-3 ml-10 2xl:ml-80">
@@ -391,13 +504,15 @@
               <p class="text-black">Partners with:</p>
             </div>
             <div class="flex ml-5">
-              <img src="/src/img/meta-logo.webp" alt="meta-logo">
-              <img src="/src/img/google-logo.svg" alt="google-logo">
+              <img src="/src/img/meta-logo.webp" alt="meta-logo" class="w-full h-8">
+              <img src="/src/img/google-logo.svg" alt="google-logo" class="w-full h-8">
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    
 
     
   </body>
